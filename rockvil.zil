@@ -2640,7 +2640,7 @@ for their hero. You can hear many things in those screams; the screams of
 women lusting for your manhood, the screams of men jealous of your power,
 the screams of everyone for the blood of the barbarian animal|
 |
-as adrenalin surges through your chest as the creature picks up a battered
+as adrenaline surges through your chest as the creature picks up a battered
 sword and shield from the ground. In a flash, the battle begins, and like most
 animals, the creature has amazing strength. His blows land on your armor, but
 you shake them off like a true hero. Summoning an inner strength, drawing upon
