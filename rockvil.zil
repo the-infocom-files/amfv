@@ -7392,7 +7392,7 @@ when tickets were sold by humans sitting in glass booths. This typical ">
 		      (T
 		       <TELL "hatefilm number 8722">)>
 		<TELL CR
-"Not refundable or exchangable. Management|
+"Not refundable or exchangeable. Management|
 reserves the right to refuse admission by|
 refunding the price of this ticket." CR>)>>
 
