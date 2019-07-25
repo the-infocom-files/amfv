@@ -9207,7 +9207,7 @@ burns." CR>)>>
 		<COND (<EQUAL? ,HERE ,POOL-HALL>
 		       <TELL
 "You knock a few balls around, but, as usual, you have to admit that
-you're not very good at cuesmanship." CR>)
+you're not very good at cuemanship." CR>)
 		      (T
 		       <TELL "You'd better find a pool hall first." CR>)>)>>
 
