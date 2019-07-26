@@ -65,7 +65,7 @@ squirrel, but that might have been weeks ago. Your memories are jumbled.">
 	       (T
 		<TELL "You are in good health." CR>)>>
 
-<ROUTINE V-INVENTORY ("AUX" SPARE-KLUDGE)
+<ROUTINE V-INVENTORY ()
 	 <COND (<NOT ,SIMULATING>
 		<SETG YES-NO-FLAG 1>
 		<QUEUE I-YES-NO 2>
@@ -1252,7 +1252,7 @@ an orderly to escort you away." CR CR>
 	       (T
 		<TELL "You can't turn that on." CR>)>>
 
-<ROUTINE V-OPEN ("AUX" F STR)
+<ROUTINE V-OPEN ()
 	 <COND (<OR <FSET? ,PRSO ,SURFACEBIT>
 		    <FSET? ,PRSO ,ACTORBIT>>
 		<V-COUNT>)
@@ -2424,7 +2424,7 @@ turn around and get lost.\"" CR>)
 
 ;"subtitle object manipulation"
 
-<ROUTINE ITAKE ("OPTIONAL" (VB T) "AUX" CNT OBJ)
+<ROUTINE ITAKE ("OPTIONAL" (VB T) "AUX" CNT)
 	 <COND ;(<FSET? ,PRSO ,INTEGRALBIT>
 		<COND (.VB
 		       <PART-OF>)>
@@ -2512,7 +2512,7 @@ turn around and get lost.\"" CR>)
 	        "            "
 	        "               ">>
 
-<ROUTINE DESCRIBE-ROOM ("OPTIONAL" (LOOK? <>) "AUX" (PRINT-DESC <>) STR AV)
+<ROUTINE DESCRIBE-ROOM ("OPTIONAL" (LOOK? <>) "AUX" (PRINT-DESC <>))
 	 <COND (<OR .LOOK?
 		    <EQUAL? ,VERBOSITY 2> ;"verbose">
 		<SET PRINT-DESC T>)>
@@ -2606,7 +2606,7 @@ visible, hurrying to destinations unknown to you.">)
 
 "DESCRIBE-OBJECT -- takes object and flag. If flag is true, will print a
 long description (fdesc or ldesc), otherwise will print short."
-<ROUTINE DESCRIBE-OBJECT (OBJ V? LEVEL "AUX" (STR <>) AV)
+<ROUTINE DESCRIBE-OBJECT (OBJ V? LEVEL "AUX" (STR <>))
 	 <COND (<AND <0? .LEVEL>
 		     <APPLY <GETP .OBJ ,P?DESCFCN> ,M-OBJDESC>>
 		<RTRUE>)

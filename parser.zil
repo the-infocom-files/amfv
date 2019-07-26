@@ -753,7 +753,7 @@ it's own orphaning. If return is true, the syntax is saved in P-SYNTAX."
 <CONSTANT P-SONUMS 3>
 
 <ROUTINE SYNTAX-CHECK
-	("AUX" SYN LEN NUM OBJ (DRIVE1 <>) (DRIVE2 <>) PREP VERB TMP)
+	("AUX" SYN LEN NUM OBJ (DRIVE1 <>) (DRIVE2 <>) PREP VERB)
 	<COND (<0? <SET VERB <GET ,P-ITBL ,P-VERB>>>
 	       <TELL "[There was no verb in that sentence!]" CR>
 	       <RFALSE>)>
@@ -1049,7 +1049,7 @@ it's own orphaning. If return is true, the syntax is saved in P-SYNTAX."
 			    (T <SETG P-PRSI <BUT-MERGE ,P-PRSI>>)>)>)>
 	<RTRUE>>  
 
-<ROUTINE BUT-MERGE (TBL "AUX" LEN BUTLEN (CNT 1) (MATCHES 0) OBJ NTBL)
+<ROUTINE BUT-MERGE (TBL "AUX" LEN (CNT 1) (MATCHES 0) OBJ NTBL)
 	<SET LEN <GET .TBL ,P-MATCHLEN>>
 	<PUT ,P-MERGE ,P-MATCHLEN 0>
 	<REPEAT ()
@@ -1098,7 +1098,7 @@ it's own orphaning. If return is true, the syntax is saved in P-SYNTAX."
 <CONSTANT P-INHIBIT 4>   
 
 <ROUTINE SNARFEM
-	 (PTR EPTR TBL "AUX" (BUT <>) LEN TMP WRD NW ONEOBJ (WAS-ALL <>))
+	 (PTR EPTR TBL "AUX" (BUT <>) TMP WRD NW ONEOBJ (WAS-ALL <>))
    <SETG P-AND <>>
    <COND (<==? ,P-GETFLAGS ,P-ALL>
 	  <SET WAS-ALL T>)>
@@ -1183,7 +1183,7 @@ the words in the last clause"
 "[There seems to be a noun missing in that sentence.]" CR>)>>
 
 <ROUTINE GET-OBJECT (TBL "OPTIONAL" (VRB T)
-		      "AUX" BITS LEN XBITS TLEN (GCHECK <>) (OLEN 0) OBJ)
+		      "AUX" LEN XBITS TLEN (GCHECK <>) (OLEN 0) OBJ)
 	 <SET XBITS ,P-SLOCBITS>
 	 <SET TLEN <GET .TBL ,P-MATCHLEN>>
 	 <COND (<BTST ,P-GETFLAGS ,P-INHIBIT> <RTRUE>)>
@@ -1369,7 +1369,7 @@ the words in the last clause"
 	       (T
 		<TELL "?]" CR>)>>
 
-<ROUTINE GLOBAL-CHECK (TBL "AUX" LEN RMG RMGL (CNT 0) OBJ OBITS FOO)
+<ROUTINE GLOBAL-CHECK (TBL "AUX" LEN RMG RMGL (CNT 0) OBJ OBITS)
 	<SET LEN <GET .TBL ,P-MATCHLEN>>
 	<SET OBITS ,P-SLOCBITS>
 	<COND (<SET RMG <GETPT ,HERE ,P?GLOBAL>>
@@ -1386,7 +1386,7 @@ the words in the last clause"
 			   <EQUAL? ,PRSA ,V?LOOK-INSIDE ,V?SEARCH ,V?EXAMINE>>
 		      <DO-SL ,ROOMS 1 1 .TBL>)>)>>
  
-<ROUTINE DO-SL (OBJ BIT1 BIT2 TBL "OPTIONAL" (MOBY-FLAG <>) "AUX" BTS)
+<ROUTINE DO-SL (OBJ BIT1 BIT2 TBL "OPTIONAL" (MOBY-FLAG <>))
 	<COND (<BTST ,P-SLOCBITS <+ .BIT1 .BIT2>>
 	       <SEARCH-LIST .OBJ .TBL ,P-SRCALL .MOBY-FLAG>)
 	      (T
@@ -1534,7 +1534,7 @@ the words in the last clause"
 		      (<IGRTR? CNT .SIZE>
 		       <RFALSE>)>>>
 
-<ROUTINE THIS-IT? (OBJ "AUX" SYNS CNT)
+<ROUTINE THIS-IT? (OBJ "AUX" SYNS)
 	 <COND (<NOT <SET SYNS <GETPT .OBJ ,P?SYNONYM>>>
 		<RFALSE>)>
 	 <COND (<AND ,P-NAM
