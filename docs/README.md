@@ -43,11 +43,11 @@ Zarf's Obsessively Complete Infocom Catalog holds copies of the game files for e
 
 [amfv-r77-s850814.z4]: https://eblong.com/infocom/gamefiles/amfv-r77-s850814.z4
 [amfv-r77.zip]: https://eblong.com/infocom/sources/amfv-r77.zip
-[revision 77]: 
+[revision 77]: https://github.com/historicalsource/amfv/tree/c7d6edc25a72387beb17b56a2775ffed2d4da027
 
 [amfv-r79-s851122.z4]: https://eblong.com/infocom/gamefiles/amfv-r79-s851122.z4
 [amfv-r79.zip]: https://eblong.com/infocom/sources/amfv-r79.zip
-[final revision]: 
+[final revision]: https://github.com/historicalsource/amfv/tree/6d740ac4924ae7d90c2ccba6bd018da4126f74d1
 
 [amfv-rlater.zip]: https://eblong.com/infocom/sources/amfv-rlater.zip
 
