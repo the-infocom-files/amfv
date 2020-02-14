@@ -21,17 +21,15 @@ The following sources provide further information on A Mind Forever Voyaging:
 
 ## Version History
 
-Zarf's Obsessively Complete Infocom Catalog holds copies of the game files for every existing version of A Mind Forever Voyaging listed in the Infocom Fact Sheet. It also holds the source files for versions 77/850814, 79/851122 and a later, in progress, version.
-
-| Release | Serial | Story File                      | Zarf Sources      | Historical Sources |
-| -------:|:------:|:-------------------------------:|:-----------------:|:------------------:|
-|       1 | 841226 |      [amfv-first-r1-s841226.z3] |                 - |                  - |
-|      47 | 850313 |  [amfv-prealpha-r47-s850313.z4] |                 - |                  - |
-|      84 | 850516 | [amfv-fullalpha-r84-s850516.z4] |                 - |                  - |
-|     131 | 850628 |    [amfv-gamma-r131-s850628.z4] |                 - |                  - |
-|      77 | 850814 |           [amfv-r77-s850814.z4] |    [amfv-r77.zip] |      [revision 77] |
-|      79 | 851122 |           [amfv-r79-s851122.z4] |    [amfv-r79.zip] |   [final revision] |
-|       - |      - |                               - | [amfv-rlater.zip] |                  - |
+| Release | Serial | Type | Story File                      | Obsessive Sources | Historical Sources |
+| -------:|:------:|:----:|:-------------------------------:|:-----------------:|:------------------:|
+|       1 | 841226 |  DEV |      [amfv-first-r1-s841226.z3] |                 - |                  - |
+|      47 | 850313 |  DEV |  [amfv-prealpha-r47-s850313.z4] |                 - |                  - |
+|      84 | 850516 |  DEV | [amfv-fullalpha-r84-s850516.z4] |                 - |                  - |
+|     131 | 850628 |  DEV |    [amfv-gamma-r131-s850628.z4] |                 - |                  - |
+|      77 | 850814 |  PUB |           [amfv-r77-s850814.z4] |    [amfv-r77.zip] |      [revision 77] |
+|      79 | 851122 |  PUB |           [amfv-r79-s851122.z4] |    [amfv-r79.zip] |   [final revision] |
+|       - |      - |  WIP |                               - | [amfv-rlater.zip] |                  - |
 
 [amfv-first-r1-s841226.z3]: https://eblong.com/infocom/gamefiles/amfv-first-r1-s841226.z3
 
