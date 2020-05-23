@@ -578,7 +578,7 @@ saw Jill working on it." CR>)>)>>
 		       LOOK> ;"LOOK AROUND OBJECT = V-LOOK"
 		<TELL "Mitchell deserves his privacy." CR>)>>
 
-<ROUTINE PARTITION-DESCFCN ("OPTIONAL" X)
+<ROUTINE PARTITION-DESCFCN ()
 	 <TELL
 "A thin partition separates Mitchell's sleeping area from the rest
 of the living room">
@@ -597,7 +597,7 @@ of the living room">
 	(GENERIC GENERIC-MITCHELL-F)
 	(ACTION MITCHELL-F)>
 
-<ROUTINE MITCHELL-DESCFCN ("OPTIONAL" RARG)
+<ROUTINE MITCHELL-DESCFCN ()
 	 <TELL "Mitchell is ">
 	 <COND (<EQUAL? ,MITCHELL-COUNTER 1>
 		<TELL "running around the room, getting ready for school">)
@@ -1412,7 +1412,7 @@ she slips the cross into her pocket." CR>)>)
 			  5 = painting (LR)	     12 = reading (BedR)
 			  6 = eating a salad (K)"
 
-<ROUTINE JILL-DESCFCN ("OPTIONAL" X)
+<ROUTINE JILL-DESCFCN ()
 	 <COND (<AND <VERB? EXAMINE>
 		     <PRSO? ,JILL>>
 		<TELL "She is ">)

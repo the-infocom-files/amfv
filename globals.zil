@@ -602,7 +602,7 @@ separate this entrance area from the prison proper." CR>)>>
 	(FLAGS ACTORBIT TOUCHBIT NARTICLEBIT)
 	(ACTION ME-F)>
 
-<ROUTINE ME-F ("AUX" OLIT) 
+<ROUTINE ME-F ()
 	 <COND (<VERB? TELL>
 		<TELL
 "Talking to yourself is a sign of impending mental collapse." CR>

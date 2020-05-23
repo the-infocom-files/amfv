@@ -4277,7 +4277,7 @@ and so on. Here's a list of the minimum times before advancement is possible:
 	(GENERIC GENERIC-PERELMAN-F) ;"they're both DOCTORs"
 	(ACTION GRIMWOLD-F)>
 
-<ROUTINE GRIMWOLD-DESCFCN ("OPTIONAL" RARG)
+<ROUTINE GRIMWOLD-DESCFCN ()
 	 <PERFORM ,V?EXAMINE ,GRIMWOLD>
 	 <RTRUE>>
 

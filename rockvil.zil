@@ -8401,7 +8401,7 @@ of the last century, but">
 		      (T
 		       <TELL ,LOOK-AROUND CR>)>)
 	       (<AND <VERB? EXAMINE>
-		     <EQUAL? HERE ,WAREHOUSE-1 ,WAREHOUSE-2>>
+		     <EQUAL? ,HERE ,WAREHOUSE-1 ,WAREHOUSE-2>>
 		<V-LOOK>)>>
 
 <ROOM INDUSTRIAL-PARK-ENTRANCE
