@@ -2640,7 +2640,7 @@ for their hero. You can hear many things in those screams; the screams of
 women lusting for your manhood, the screams of men jealous of your power,
 the screams of everyone for the blood of the barbarian animal|
 |
-as adrenalin surges through your chest as the creature picks up a battered
+as adrenaline surges through your chest as the creature picks up a battered
 sword and shield from the ground. In a flash, the battle begins, and like most
 animals, the creature has amazing strength. His blows land on your armor, but
 you shake them off like a true hero. Summoning an inner strength, drawing upon
@@ -7392,7 +7392,7 @@ when tickets were sold by humans sitting in glass booths. This typical ">
 		      (T
 		       <TELL "hatefilm number 8722">)>
 		<TELL CR
-"Not refundable or exchangable. Management|
+"Not refundable or exchangeable. Management|
 reserves the right to refuse admission by|
 refunding the price of this ticket." CR>)>>
 
@@ -9207,7 +9207,7 @@ burns." CR>)>>
 		<COND (<EQUAL? ,HERE ,POOL-HALL>
 		       <TELL
 "You knock a few balls around, but, as usual, you have to admit that
-you're not very good at cuesmanship." CR>)
+you're not very good at cuemanship." CR>)
 		      (T
 		       <TELL "You'd better find a pool hall first." CR>)>)>>
 
